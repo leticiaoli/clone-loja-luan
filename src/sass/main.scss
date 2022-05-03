@@ -1,0 +1,17 @@
+//Reset
+@import 'reset/normalize.scss';
+@import 'reset/reset.scss';
+
+//pages
+
+@import 'pages/home.scss';
+
+//components
+
+@import 'components/header.scss';
+@import 'components/bannerPrincipal.scss';
+@import 'components/bannerInfoLoja.scss';
+@import 'components/bannerCategoria.scss';
+@import 'components/sessaoPrateleira.scss';
+@import 'components/sessaoInstagram.scss';
+@import 'components/footer.scss';

@@ -1,0 +1,51 @@
+.bannerPrincipal-mobile,
+.bannerPrincipal-desktop{
+    
+    display: block;
+    position: relative;
+    width: 100%;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    .slick-dots{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 16px;
+        list-style-type: none;
+
+        li{
+            width: 8px;
+            height: 8px;
+            text-indent: -99999px;
+            border: 0;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 1px 1px 1px #000;
+            margin: 0 4px;
+            opacity: .6;
+            transition: opacity linear .3s;
+
+            &.slick-active{
+                opacity: 1;
+                transition: opacity linear .3s;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .bannerPrincipal-desktop{
+        display: none;
+    }
+}
+  @media (min-width: 769px) {
+    .bannerPrincipal-mobile{
+        display: none;
+    }
+}

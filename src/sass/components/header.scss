@@ -1,0 +1,468 @@
+body.active{
+  overflow: hidden;
+}
+
+.faixaTopMobile {
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #232323;
+
+  &-img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .faixaTopDesktop {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .faixaTopMobile {
+    display: none;
+  }
+
+  .faixaTopDesktop {
+    height: 30px;
+    background-color: #410208;
+    color: #fff;
+  }
+
+  .faixaTopDesktop > .containerCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      color: #fff;
+      padding: 10px 0;
+      font-family: "Oswald", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.headerMobile > .containerCenter {
+  height: 65px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerMobile {
+  .logoMobile {
+    display: flex;
+    justify-content: center;
+    width: 160px;
+    height: 62px;
+  }
+
+  &-img {
+    max-height: 56px;
+    padding: 6px 0 0 10px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px 0 0;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      list-style-type: none;
+      border: 1px solid #000;
+      margin: 0 2px;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .headerMobile > .containerCenter {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .headerDesktop > .containerCenter {
+    height: 140px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .headerDesktop {
+    .logoDesketop {
+      width: calc(25% - 10px);
+      cursor: pointer;
+    }
+
+    .busca {
+      display: flex;
+      justify-content: center;
+      width: calc(50%);
+      height: 36px;
+
+      .buscaInput {
+        width: 404px;
+        font: 400 12px "Montserrat", sans-serif;
+        color: #434343;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 6px 12px;
+        border-radius: 3px 0 0 3px;
+        border-right: none;
+      }
+      .buscaButton {
+        width: 30.4px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 0 3px 3px 0;
+        border-left: none;
+      }
+    }
+
+    .usuarioSacola {
+      width: calc(25% - 10px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font: 600 12px "Oxygen", sans-serif;
+        color: #232323;
+        text-decoration: none;
+
+        img {
+          width: 25px;
+          height: 25px;
+          margin-right: 6px;
+        }
+      }
+      .usuario {
+        padding-right: 16px;
+        border-right: 1px solid #000;
+        cursor: pointer;
+        position: relative;
+        padding-bottom: 5px;
+        padding-top: 5px;
+      }
+      .sacola {
+        padding: 0 0 0 10px;
+        cursor: pointer;
+        position: relative;
+      }
+    }
+  }
+
+  .usuario:hover ~ .boxLogin {
+    display: block;
+  }
+
+  .boxLogin {
+    width: 270px;
+    height: auto;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #232323;
+    padding: 5px 7px 7px;
+    top: 128px;
+    z-index: 15;
+    right: calc(20% - 10px);
+    box-sizing: border-box;
+
+    &:hover{
+      display: block;
+    }
+
+    &::after{
+      content: "";
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      background: #fff;
+      right: 50px;
+      top: -8.5px;
+      transform: rotate(45deg);
+      border-top: 1px solid #000;
+      border-left: 1px solid #000;
+    }
+
+    &-title {
+      color: #232323;
+      font: 600 12px "Oxygen", sans-serif;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      border-bottom: 1px dashed #232323;
+      text-align: center;
+      padding: 5px 0;
+    }
+
+    &-email,
+    &-senha {
+      background-color: #ebebeb;
+      outline: 0;
+      border: 0;
+      color: #232323;
+      display: block;
+      font: 400 11px "Oxygen", sans-serif;
+      height: 40px;
+      margin-bottom: 8px;
+      padding: 0 7px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    &-btn {
+      background-color: #000;
+      letter-spacing: 5px;
+      text-align: center;
+      color: #fff;
+      font: 500 12px "Oxygen", sans-serif;
+      height: 40px;
+      text-transform: uppercase;
+      width: 100%;
+    }
+
+    &-bordabtn {
+      border-bottom: 1px dashed #232323;
+      width: 98%;
+      height: 1px;
+      margin: 0px auto 6px;
+    }
+
+    &-btnCadastro {
+      margin-top: 10px;
+      background-color: #8d3756;
+      letter-spacing: 5px;
+      text-align: center;
+      color: #fff;
+      font: 500 12px "Oxygen", sans-serif;
+      height: 40px;
+      text-transform: uppercase;
+      width: 100%;
+    }
+  }
+}
+
+.sacola:hover ~ .boxSacola {
+  display: block;
+}
+
+.boxSacola {
+  display: none;
+  background-color: #fff;
+  border: 1px solid #232323;
+  padding: 7px;
+  position: absolute;
+  width: 280px;
+  height: auto;
+  top: 129px;
+  z-index: 15;
+  box-sizing: border-box;
+
+  &:hover{
+    display: block;
+  }
+
+  &::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: #fff;
+    right: 50px;
+    top: -8.5px;
+    transform: rotate(45deg);
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    z-index: -10;
+  }
+
+  
+
+  &-Info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3c3c3c;
+    font-family:  'Oxygen', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 7px 7px;
+    border-top: 1px dotted #777;
+  }
+
+  &-btn{
+    width: 100%;
+    height: 40px;
+    background: #232323;
+    border: none;
+    color: #fff;
+    display: block;
+    font-family:  'Oxygen', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+.menu > .containerCenter {
+  height: 33px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.menu-item {
+  font: 700 13px/13px "Montserrat", sans-serif;
+  color: #232323;
+  text-decoration: none;
+}
+
+.wrapperMenu {
+  display: none;
+  background-color: #fff;
+  width: 100%;
+  height: calc(100% - 95px);
+  position: fixed;
+  top: 95px;
+  z-index: 99999;
+  padding: 15px 0;
+  overflow-y: auto;
+}
+
+.menuListMobile {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0 25px;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+
+.menuMobile-item {
+  display: block;
+  width: 100%;
+  height: auto;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #ccc;
+  border: 1px solid #000;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.menuMobile-subItem {
+  display: block;
+  color: #000;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 10px 12px;
+}
+
+@media (min-width: 769px) {
+  .wrapperMenu {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerDesktop {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu > .containerCenter {
+    padding-bottom: 0px;
+    margin-bottom: 16px;
+  }
+
+  .menuList {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    &-item {
+      position: relative;
+      flex: 1;
+      padding: 16px 0;
+
+      > a {
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+
+      &:hover .subMenuList {
+        display: block;
+      }
+    }
+
+    .subMenuList {
+      width: 300px;
+      position: absolute;
+      left: calc(50% - 150px);
+      top: 38px;
+      z-index: 9999;
+      background-color: #fff;
+      border-top: 4px solid #fdc560;
+      padding: 10px 25px;
+      box-sizing: border-box;
+      display: none;
+      box-shadow: 0px 5px 6px 0px rgb(0 0 0 / 10%),
+        3px 4px 6px 0px rgb(0 0 0 / 10%), -3px 5px 6px 0px rgb(0 0 0 / 10%);
+
+      &-item {
+        display: block;
+        padding-bottom: 24px;
+
+        .subMenuListSub {
+          &-item {
+            .menu-item2 {
+              font-weight: 400;
+              font-size: 12px;
+              font-family: "Montserrat", sans-serif;
+              color: #232323;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

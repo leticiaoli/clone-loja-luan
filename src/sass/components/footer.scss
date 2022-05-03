@@ -1,0 +1,254 @@
+footer {
+  background: #ececec;
+  position: relative;
+}
+
+.footerContato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px;
+  font-family: "Oswald", sans-serif;
+  color: #2e2d2d;
+
+  &-iconFone {
+    width: 20px;
+    height: 20px;
+    margin: 8px;
+  }
+
+  &-titulo {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+  }
+  &-telefone {
+    font-size: 30px;
+    text-transform: uppercase;
+    clear: both;
+    font-weight: 700;
+    padding: 8px 0;
+  }
+}
+
+.footer-info {
+  font: 700 11px "Oxygen", sans-serif;
+  text-transform: lowercase;
+  letter-spacing: -0.2px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.footerInstitucional,
+.footerDuvidas,
+.footerVendas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.footer-titulo {
+  color: #434343;
+  font: 700 14px "Oswald", sans-serif;
+  margin: 8px 0;
+  text-transform: uppercase;
+}
+
+.footerLista {
+  list-style: none;
+
+  &-item {
+    text-align: center;
+    color: #626262;
+    font: 400 12px "Oxygen", sans-serif;
+    line-height: 18px;
+  }
+}
+
+.social {
+  margin: 50px 0;
+
+  &-lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-img {
+    width: 35px;
+    height: 35px;
+    padding: 0 2px;
+  }
+}
+
+.pagamento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 13px;
+}
+
+.pagamentoLista {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 10px;
+
+  &-item {
+    width: auto;
+    max-width: 100%;
+    margin: 0 4px;
+    border: 1px solid #c0c1c1;
+  }
+}
+
+.seloSeguranca {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+  &-titulo {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  &-img {
+    max-width: 100%;
+    margin-bottom: 14px;
+  }
+
+  &-texto {
+    color: #434343;
+    font: 600 11px "Oxygen", sans-serif;
+    margin-bottom: 10px;
+  }
+}
+
+.logoDev {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+
+  &-texto {
+    color: #434343;
+    font: 600 11px "Oxygen", sans-serif;
+  }
+
+  &-img {
+    margin-top: 10px;
+  }
+}
+
+.infoEscritorio {
+  color: #434343;
+  font: 600 11px "Oxygen", sans-serif;
+  padding: 20px 0;
+  text-align: center;
+  line-height: 18px;
+}
+
+.logoTray {
+  width: 100%;
+  background: #ccc;
+  height: 20px;
+  overflow: hidden;
+  text-align: center;
+  padding: 5px 0;
+
+  &-msg {
+    font-family: "Jost", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &-escritorio {
+    color: #666;
+    font-family: "Jost", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.botaoScroll{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background-color: #8d3757;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+
+  &-img{
+    width: 35px;
+    height: 35px;
+      fill: #fff!important;
+  }
+}
+
+@media (min-width: 768px) {
+  .containerDesktop1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footerContato,
+    .footerInstitucional,
+    .footerDuvidas,
+    .footerVendas {
+      width: 25%;
+    }
+
+    .footerInstitucional {
+      margin-top: 20px;
+    }
+
+    .footerDuvidas{
+      margin-top: 32px;
+    }
+
+    .footerVendas,
+    .footer-titulo{
+      margin: 0;
+    }
+  }
+  .containerDesktop2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .pagamento {
+      width: 16.66666667%;
+      height: auto;
+      margin-top: 0;
+      padding: 0 10px;
+    }
+
+    .seloSeguranca {
+      margin-top: 30px;
+      padding: 0 10px;
+    }
+
+    .logoDev {
+      margin-top: 35px;
+      padding: 0 10px;
+    }
+  }
+}

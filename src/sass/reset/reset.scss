@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.containerFull{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.containerCenter{
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 8px;
+    display: block;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+ 
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,67 @@
+.box-Prateleira{
+    margin: 20px 0;
+}
+
+.linha-separacao {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    border-top: 4px solid #232323;
+}
+
+.subtitulo{
+    text-align: center;
+    font: 800 italic 35px 'Oxygen', sans-serif;
+    text-transform: uppercase;
+    margin: 20px 15px
+}
+
+.listaProduto{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 8px;
+
+
+    .produto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .descricaoProduto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 10px;
+
+            .tituloProduto{
+                margin-top: 10px;
+                font: 600 12px 'Montserrat', sans-serif;
+            }
+
+            .preco{
+                margin-top: 8px;
+                font: 600 18px 'Montserrat', sans-serif;
+            }
+
+            .parcela{
+                margin-top: 8px;
+                font: 600 14px 'Montserrat', sans-serif;
+            }
+        }
+    }
+}
+
+.slick-arrow{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.carrosselPrateleira {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

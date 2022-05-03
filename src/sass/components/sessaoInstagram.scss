@@ -1,0 +1,90 @@
+.linhaSeparacao-insta{
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+    border-top: 2px solid #000;
+}
+
+.listaImagens__mobile{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+
+    .img-insta{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .texto-insta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+        .titulo-insta{
+            font-size: 12pt;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 800;
+        }
+
+        .user-insta{
+            font-size: 9pt;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    }
+}
+
+.listaImagens__desktop{
+    display: none;
+}
+
+@media (min-width: 991px){
+    .listaImagens__mobile{
+        display: none;
+    }
+
+    .listaImagens__desktop{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+       
+
+        .img-insta{
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+        }
+
+        .texto-insta{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .titulo-insta{
+                font-size: 18pt;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 800;
+            }
+    
+            .user-insta{
+                font-size: 15pt;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                text-decoration: underline 
+            }
+        }
+    }
+
+
+}
+
